@@ -15,7 +15,7 @@ function print2() {
 
 // function print3() {
 //     const fs = require('fs');
-//     // fs.readFile is asynchronice function/ non-blocking
+//     // fs.readFile is asynchronice function/ non-blocking / uses an anonymous callback function
 //     fs.readFile('./number3.txt', 'utf-8', function (err, number3) {
 //         console.log(number3);
 //         //to get the items printed in line, we add the execution for the next function, after the callback has executed
@@ -30,7 +30,7 @@ function print3() {
         print4()
     }
     const fs = require('fs');
-    // callback function being past in
+    // callback function being past in by name, insted of being anonymous
     fs.readFile('./number3.txt', 'utf-8', callback);
 }
 
